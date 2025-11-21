@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediBridge - Philips iE33 & iU22 Master Specialists</title>
+    <meta name="description" content="Comprehensive remote diagnostics, installation, and A–G Series (2008–2012) restoration for Philips iE33 & iU22 ultrasound systems.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom Animations -->
+    <style>
+        @keyframes fade-in-up {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fade-in-up 0.8s ease-out forwards;
+        }
+        
+        /* Smooth scrolling behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Selection styling */
+        ::selection {
+            background-color: rgb(59 130 246);
+            color: white;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased bg-slate-50">
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-extrabold tracking-tight flex items-center gap-2 group">
+                    <div id="logo-bg" class="w-8 h-8 rounded-lg flex items-center justify-center shadow-lg transition-colors bg-blue-500 text-white group-hover:bg-blue-400">
+                        <i data-lucide="activity" class="w-5 h-5"></i>
+                    </div>
+                    <span id="logo-text" class="text-white">
+                        Medi<span class="text-blue-500">Bridge</span>
+                    </span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-sm font-semibold transition-colors text-slate-200 hover:text-blue-400">Home</a>
+                    <a href="#services" class="nav-link text-sm font-semibold transition-colors text-slate-200 hover:text-blue-400">Services</a>
+                    <a href="#generations" class="nav-link text-sm font-semibold transition-colors text-slate-200 hover:text-blue-400">Generations</a>
+                    <a href="#contact" class="nav-link text-sm font-semibold transition-colors text-slate-200 hover:text-blue-400">Contact</a>
+                    <a href="https://wa.me/1234567890" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2 transform hover:scale-105">
+                        <i data-lucide="phone" class="w-4 h-4"></i> WhatsApp
+                    </a>
+                </div>
+
+                <!-- Mobile Button -->
+                <button id="mobile-menu-btn" class="md:hidden focus:outline-none text-white">
+                    <i data-lucide="menu" class="w-8 h-8"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-t border-slate-100 shadow-2xl py-6 px-6 flex-col space-y-4 md:hidden transform origin-top transition-all">
+            <a href="#home" class="mobile-menu-link text-left text-slate-800 font-semibold text-lg p-2 rounded hover:bg-slate-50 block">Home</a>
+            <a href="#services" class="mobile-menu-link text-left text-slate-800 font-semibold text-lg p-2 rounded hover:bg-slate-50 block">Services</a>
+            <a href="#generations" class="mobile-menu-link text-left text-slate-800 font-semibold text-lg p-2 rounded hover:bg-slate-50 block">Generations</a>
+            <a href="#contact" class="mobile-menu-link text-left text-slate-800 font-semibold text-lg p-2 rounded hover:bg-slate-50 block">Contact</a>
+            <div class="pt-4 border-t border-slate-100">
+                <a href="https://wa.me/1234567890" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold text-center block shadow-lg">Start Chat</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1920" alt="Medical Equipment" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-br from-slate-900/95 to-blue-900/80"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="text-white space-y-8 animate-fade-in-up">
+                <div class="inline-flex items-center gap-2 bg-blue-900/50 border border-blue-500/30 rounded-full px-4 py-1.5 text-sm font-semibold text-blue-300 backdrop-blur-sm">
+                    <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                    Available for Remote Support
+                </div>
+                
+                <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight tracking-tight">
+                    Philips iE33 & iU22 <br/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Master Specialists</span>
+                </h1>
+                
+                <p class="text-lg text-slate-300 max-w-xl leading-relaxed">
+                    Comprehensive remote diagnostics, installation, and A–G Series (2008–2012) restoration. We bring your ultrasound systems back to life with OEM-level precision.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-xl font-bold text-center transition-all shadow-xl shadow-blue-600/20 hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                        Get Diagnostics <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#generations" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-center transition-colors">
+                        Explore Series
+                    </a>
+                </div>
+                
+                <div class="flex items-center gap-8 pt-8 opacity-80 border-t border-white/10">
+                    <div>
+                        <p class="text-2xl font-bold text-white">15+</p>
+                        <p class="text-xs text-slate-400 uppercase tracking-wider">Years Exp.</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-white">500+</p>
+                        <p class="text-xs text-slate-400 uppercase tracking-wider">Systems Fixed</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-white">24/7</p>
+                        <p class="text-xs text-slate-400 uppercase tracking-wider">Online Support</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modern Tech Visualization Card -->
+            <div class="hidden lg:block relative animate-fade-in-up" style="animation-delay: 0.2s">
+                <div class="absolute -inset-4 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-[2rem] blur-2xl opacity-30 animate-pulse"></div>
+                <div class="relative bg-slate-900/90 backdrop-blur-xl border border-slate-700/50 p-8 rounded-[2rem] shadow-2xl">
+                    <div class="flex items-center justify-between mb-8 border-b border-slate-700 pb-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400">
+                                <i data-lucide="server" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-white font-bold text-lg">System Diagnostic</h3>
+                                <p class="text-slate-400 text-xs font-mono">ID: PH-IE33-REMOTE-01</p>
+                            </div>
+                        </div>
+                        <span class="px-3 py-1 bg-green-500/20 text-green-400 text-xs font-bold rounded-full border border-green-500/30">CONNECTED</span>
+                    </div>
+                    
+                    <div class="space-y-4 font-mono text-sm">
+                        <div class="flex justify-between items-center bg-slate-800/50 p-3 rounded-lg border border-slate-700">
+                            <span class="text-slate-400">Target Hardware</span>
+                            <span class="text-white font-semibold">Philips iE33 (F-Cart)</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-slate-800/50 p-3 rounded-lg border border-slate-700">
+                            <span class="text-slate-400">Status Check</span>
+                            <span class="text-blue-400">Analyzing...</span>
+                        </div>
+                        
+                        <!-- Terminal Effect -->
+                        <div class="mt-6 bg-black/80 rounded-xl border border-slate-800 p-5 shadow-inner">
+                            <div class="flex gap-1.5 mb-4">
+                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            </div>
+                            <div class="space-y-2 text-xs">
+                                <p class="text-green-400 flex gap-2"><span class="opacity-50">$</span> verify_module --target=UAIO</p>
+                                <p class="text-slate-300 ml-4">-> UAIO Module detected [OK]</p>
+                                <p class="text-green-400 flex gap-2"><span class="opacity-50">$</span> check_psu_voltage</p>
+                                <p class="text-slate-300 ml-4">-> Voltage rails stable [OK]</p>
+                                <p class="text-yellow-400 flex gap-2"><span class="opacity-50">$</span> scan_errors</p>
+                                <p class="text-red-400 ml-4">-> ERROR: Code 0x205 found (Timekeeper RAM)</p>
+                                <p class="text-blue-400 animate-pulse mt-2">> Ready to patch remotely_</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-blue-600 font-bold tracking-wider uppercase text-sm mb-2 block">Our Expertise</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Technical Solutions</h2>
+                <p class="text-slate-600 text-lg leading-relaxed">
+                    We don't just fix machines; we optimize your entire imaging workflow through expert remote intervention.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 group relative overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-bl-full -mr-8 -mt-8 opacity-50 group-hover:bg-blue-200 transition-colors"></div>
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-blue-600 shadow-md mb-6 relative z-10 group-hover:scale-110 transition-transform">
+                        <i data-lucide="wifi" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3 relative z-10">Remote Diagnostics</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed relative z-10">Real-time log analysis via secure connection to identify board-level failures without a site visit.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 group relative overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-bl-full -mr-8 -mt-8 opacity-50 group-hover:bg-blue-200 transition-colors"></div>
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-blue-600 shadow-md mb-6 relative z-10 group-hover:scale-110 transition-transform">
+                        <i data-lucide="cpu" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3 relative z-10">Module Replacement</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed relative z-10">Guidance on replacing UAIO, DSC, FEC, and PSU modules with compatibility verification.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 group relative overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-bl-full -mr-8 -mt-8 opacity-50 group-hover:bg-blue-200 transition-colors"></div>
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-blue-600 shadow-md mb-6 relative z-10 group-hover:scale-110 transition-transform">
+                        <i data-lucide="database" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3 relative z-10">Software & Keys</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed relative z-10">Resolution of license conflicts, option keys integration, and secure software reloading.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 group relative overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-bl-full -mr-8 -mt-8 opacity-50 group-hover:bg-blue-200 transition-colors"></div>
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-blue-600 shadow-md mb-6 relative z-10 group-hover:scale-110 transition-transform">
+                        <i data-lucide="hard-drive" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3 relative z-10">Drive Recovery</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed relative z-10">Hard drive cloning, backup restoration, and upgrade to SSD for faster boot times.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 group relative overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-bl-full -mr-8 -mt-8 opacity-50 group-hover:bg-blue-200 transition-colors"></div>
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-blue-600 shadow-md mb-6 relative z-10 group-hover:scale-110 transition-transform">
+                        <i data-lucide="settings" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3 relative z-10">Configuration</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed relative z-10">DICOM setup, printer mapping, and custom preset configuration for specific studies.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 group relative overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-bl-full -mr-8 -mt-8 opacity-50 group-hover:bg-blue-200 transition-colors"></div>
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-blue-600 shadow-md mb-6 relative z-10 group-hover:scale-110 transition-transform">
+                        <i data-lucide="globe" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3 relative z-10">Global Support</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed relative z-10">Bilingual support (English/Spanish) available worldwide. We ship parts internationally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Generations Section -->
+    <section id="generations" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(#60a5fa 1px, transparent 1px); background-size: 40px 40px;"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div class="lg:sticky lg:top-32">
+                    <span class="text-blue-400 font-bold tracking-wider uppercase text-sm mb-2 block">Total Compatibility</span>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Mastery of Generations <br/><span class="text-blue-400">A through G</span></h2>
+                    <p class="text-slate-300 text-lg mb-8 leading-relaxed">
+                        The iE33/iU22 platform evolved significantly from 2008 to 2012. We understand the specific board revisions, power requirements, and software baselines for each distinct "Cart".
+                    </p>
+                    
+                    <div class="bg-slate-800/50 backdrop-blur border border-slate-700 p-6 rounded-2xl">
+                        <div class="flex items-start gap-4">
+                            <i data-lucide="alert-circle" class="text-blue-400 w-6 h-6 flex-shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Why this matters?</h4>
+                                <p class="text-slate-400 text-sm">Mixing parts from different generations (e.g., putting a D-cart UMB in an F-cart) causes system instability. We verify every part number.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- A-Series -->
+                    <div class="group p-6 rounded-2xl border transition-all cursor-default bg-slate-800/40 border-slate-700 hover:border-blue-500 hover:bg-slate-800/80">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-bold transition-colors text-white group-hover:text-blue-400">A-Series</h3>
+                            <span class="text-xs font-mono px-2 py-1 rounded bg-slate-700 text-slate-300">2008</span>
+                        </div>
+                        <p class="text-slate-400 text-sm">The foundation of the unified platform architecture.</p>
+                    </div>
+
+                    <!-- B & C Series -->
+                    <div class="group p-6 rounded-2xl border transition-all cursor-default bg-slate-800/40 border-slate-700 hover:border-blue-500 hover:bg-slate-800/80">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-bold transition-colors text-white group-hover:text-blue-400">B & C Series</h3>
+                            <span class="text-xs font-mono px-2 py-1 rounded bg-slate-700 text-slate-300">2008-2009</span>
+                        </div>
+                        <p class="text-slate-400 text-sm">Workflow optimizations and initial stabilization of the vision processing.</p>
+                    </div>
+
+                    <!-- D & E Series -->
+                    <div class="group p-6 rounded-2xl border transition-all cursor-default bg-slate-800/40 border-slate-700 hover:border-blue-500 hover:bg-slate-800/80">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-bold transition-colors text-white group-hover:text-blue-400">D & E Series</h3>
+                            <span class="text-xs font-mono px-2 py-1 rounded bg-slate-700 text-slate-300">2010</span>
+                        </div>
+                        <p class="text-slate-400 text-sm">Major firmware updates, enhanced hardware reliability, and new probe support.</p>
+                    </div>
+
+                    <!-- F-Series (xMATRIX) - Highlighted -->
+                    <div class="group p-6 rounded-2xl border transition-all cursor-default bg-blue-900/20 border-blue-500/50 hover:bg-blue-900/40 shadow-[0_0_30px_rgba(59,130,246,0.1)] relative overflow-hidden">
+                        <div class="absolute -left-1 top-1/2 -translate-y-1/2 w-1 h-12 bg-blue-500 rounded-r-full"></div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-bold transition-colors text-blue-400">F-Series (xMATRIX)</h3>
+                            <span class="text-xs font-mono px-2 py-1 rounded bg-blue-900 text-blue-300 border border-blue-700">2011</span>
+                        </div>
+                        <p class="text-slate-400 text-sm">The technological leap. Real-time 4D, xMatrix transducers, and superior processing power.</p>
+                    </div>
+
+                    <!-- G-Series -->
+                    <div class="group p-6 rounded-2xl border transition-all cursor-default bg-slate-800/40 border-slate-700 hover:border-blue-500 hover:bg-slate-800/80">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-bold transition-colors text-white group-hover:text-blue-400">G-Series</h3>
+                            <span class="text-xs font-mono px-2 py-1 rounded bg-slate-700 text-slate-300">2012</span>
+                        </div>
+                        <p class="text-slate-400 text-sm">The final and most stable revision of the classic iE33/iU22 architecture.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-blue-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">The MediBridge Advantage</h2>
+                <p class="text-slate-600 text-lg">Independent specialists focused solely on results and cost-efficiency.</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <!-- Advantage 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-blue-100 text-center hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mx-auto mb-6">
+                        <i data-lucide="check" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Online First</h4>
+                    <p class="text-sm text-slate-600">We solve 85% of issues remotely, saving you travel costs.</p>
+                </div>
+
+                <!-- Advantage 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-blue-100 text-center hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mx-auto mb-6">
+                        <i data-lucide="book-open" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Proprietary Knowledge</h4>
+                    <p class="text-sm text-slate-600">Access to undocumented service modes and repair protocols.</p>
+                </div>
+
+                <!-- Advantage 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-blue-100 text-center hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mx-auto mb-6">
+                        <i data-lucide="zap" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Rapid Turnaround</h4>
+                    <p class="text-sm text-slate-600">Diagnose today, ship parts tomorrow. Minimum downtime.</p>
+                </div>
+
+                <!-- Advantage 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-blue-100 text-center hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mx-auto mb-6">
+                        <i data-lucide="shield-check" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Warranty</h4>
+                    <p class="text-sm text-slate-600">All our repairs and parts come with a solid warranty guarantee.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-100 flex flex-col lg:flex-row">
+                
+                <!-- Contact Info Side -->
+                <div class="bg-slate-900 p-12 text-white lg:w-2/5 flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-blue-500 rounded-full filter blur-[80px] opacity-20 -mr-16 -mt-16"></div>
+                    
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-bold mb-6">Start Your Repair</h3>
+                        <p class="text-slate-300 mb-12">Don't let a broken system stall your clinic. Our engineers are ready to assist you instantly via WhatsApp or Email.</p>
+                        
+                        <div class="space-y-8">
+                            <a href="https://wa.me/1234567890" class="flex items-center gap-5 group">
+                                <div class="w-12 h-12 rounded-xl bg-green-500/20 flex items-center justify-center text-green-500 group-hover:bg-green-500 group-hover:text-white transition-all">
+                                    <i data-lucide="message-circle" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Instant Chat</p>
+                                    <p class="font-bold text-lg">+1 234 567 890</p>
+                                </div>
+                            </a>
+                            
+                            <a href="mailto:support@medibridge.com" class="flex items-center gap-5 group">
+                                <div class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-all">
+                                    <i data-lucide="mail" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Email Us</p>
+                                    <p class="font-bold text-lg">support@medibridge.com</p>
+                                </div>
+                            </a>
+                            
+                            <div class="flex items-center gap-5">
+                                <div class="w-12 h-12 rounded-xl bg-slate-700/50 flex items-center justify-center text-slate-400">
+                                    <i data-lucide="clock" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Availability</p>
+                                    <p class="font-bold text-lg">Mon-Sun, 24h Emergency</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Side -->
+                <div class="p-12 lg:w-3/5 bg-white">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Your Name</label>
+                                <input type="text" name="name" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="Dr. Smith">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Clinic / Hospital</label>
+                                <input type="text" name="clinic" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="City Medical Center">
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">System Model</label>
+                                <div class="relative">
+                                    <select name="model" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all appearance-none cursor-pointer">
+                                        <option>Philips iE33</option>
+                                        <option>Philips iU22</option>
+                                        <option>Not Sure</option>
+                                    </select>
+                                    <i data-lucide="chevron-down" class="absolute right-4 top-3.5 text-slate-400 w-5 h-5 pointer-events-none"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Series / Year</label>
+                                <div class="relative">
+                                    <select name="series" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all appearance-none cursor-pointer">
+                                        <option>Unknown</option>
+                                        <option>A-Series (2008)</option>
+                                        <option>B-Series (2008-09)</option>
+                                        <option>C-E Series (2009-10)</option>
+                                        <option>F-G Series (2011-12)</option>
+                                    </select>
+                                    <i data-lucide="chevron-down" class="absolute right-4 top-3.5 text-slate-400 w-5 h-5 pointer-events-none"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Describe the Error / Issue</label>
+                            <textarea name="issue" rows="4" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none" placeholder="e.g., Error 005 at startup, blue screen, probe not recognized..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-blue-500/30 flex justify-center items-center gap-2 group">
+                            Submit Support Request <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="#" class="text-2xl font-extrabold tracking-tight text-white flex items-center gap-2 mb-6">
+                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white">
+                            <i data-lucide="activity" class="w-5 h-5"></i>
+                        </div>
+                        <span>Medi<span class="text-blue-500">Bridge</span></span>
+                    </a>
+                    <p class="text-sm leading-relaxed max-w-sm">
+                        MediBridge is an independent service provider specializing in retired Philips healthcare systems. We are not affiliated with Philips Healthcare.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-blue-400 transition-colors">Home</a></li>
+                        <li><a href="#services" class="hover:text-blue-400 transition-colors">Services</a></li>
+                        <li><a href="#generations" class="hover:text-blue-400 transition-colors">Compatibility Guide</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Terms of Service</a></li>
+                        <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs opacity-60">
+                <p>&copy; 2023 MediBridge Solutions. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Global Specialists in Ultrasound Maintenance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            
+            // Update icon
+            const icon = mobileMenuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('flex')) {
+                icon.setAttribute('data-lucide', 'x');
+            } else {
+                icon.setAttribute('data-lucide', 'menu');
+            }
+            lucide.createIcons();
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = document.querySelectorAll('.mobile-menu-link');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        const logoBg = document.getElementById('logo-bg');
+        const logoText = document.getElementById('logo-text');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white/85', 'backdrop-blur-md', 'border-b', 'border-white/30', 'py-2', 'shadow-sm');
+                navbar.classList.remove('bg-transparent', 'py-4');
+                
+                logoBg.classList.add('bg-blue-600');
+                logoBg.classList.remove('bg-blue-500', 'group-hover:bg-blue-400');
+                
+                logoText.classList.add('text-slate-900');
+                logoText.classList.remove('text-white');
+                
+                navLinks.forEach(link => {
+                    link.classList.add('text-slate-700', 'hover:text-blue-600');
+                    link.classList.remove('text-slate-200', 'hover:text-blue-400');
+                });
+
+                mobileMenuBtn.classList.add('text-slate-900');
+                mobileMenuBtn.classList.remove('text-white');
+            } else {
+                navbar.classList.remove('bg-white/85', 'backdrop-blur-md', 'border-b', 'border-white/30', 'py-2', 'shadow-sm');
+                navbar.classList.add('bg-transparent', 'py-4');
+                
+                logoBg.classList.remove('bg-blue-600');
+                logoBg.classList.add('bg-blue-500', 'group-hover:bg-blue-400');
+                
+                logoText.classList.remove('text-slate-900');
+                logoText.classList.add('text-white');
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('text-slate-700', 'hover:text-blue-600');
+                    link.classList.add('text-slate-200', 'hover:text-blue-400');
+                });
+
+                if (!mobileMenu.classList.contains('flex')) {
+                    mobileMenuBtn.classList.remove('text-slate-900');
+                    mobileMenuBtn.classList.add('text-white');
+                }
+            }
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Request sent! We will contact you shortly.');
+            contactForm.reset();
+        });
+
+        // Re-initialize icons after any DOM changes
+        setTimeout(() => {
+            lucide.createIcons();
+        }, 100);
+    </script>
+</body>
+</html>
