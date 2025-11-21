@@ -528,6 +528,9 @@
 
     <!-- JavaScript -->
     <script>
+        // ⚙️ CONFIGURACIÓN: URL de Google Apps Script
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwui8nSdYpXLfIZCnrcslrK4wFn7DlL0HAiDfS0l7ikz1FyMvdewT4yfykXene5Kfpl1Q/exec';
+        
         // Initialize Lucide Icons
         lucide.createIcons();
 
@@ -607,13 +610,95 @@
             }
         });
 
-        // Form submission
+        // Form submission with Google Apps Script
         const contactForm = document.getElementById('contact-form');
-        contactForm.addEventListener('submit', (e) => {
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.innerHTML;
+        
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            alert('Request sent! We will contact you shortly.');
-            contactForm.reset();
+            
+            // Validar que se haya configurado la URL
+            if (GOOGLE_SCRIPT_URL === 'TU_URL_DE_GOOGLE_APPS_SCRIPT_AQUI') {
+                alert('⚠️ Error de configuración: Por favor configura la URL de Google Apps Script en el código JavaScript.');
+                return;
+            }
+            
+            // Deshabilitar el botón y mostrar estado de carga
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<i data-lucide="loader-2" class="w-5 h-5 animate-spin inline-block mr-2"></i> Enviando...';
+            lucide.createIcons();
+            
+            // Recopilar datos del formulario
+            const formData = {
+                name: contactForm.querySelector('input[name="name"]').value,
+                clinic: contactForm.querySelector('input[name="clinic"]').value,
+                model: contactForm.querySelector('select[name="model"]').value,
+                series: contactForm.querySelector('select[name="series"]').value,
+                issue: contactForm.querySelector('textarea[name="issue"]').value
+            };
+            
+            try {
+                // Enviar datos a Google Apps Script
+                const response = await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors', // Importante para Google Apps Script
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+                
+                // Como usamos 'no-cors', asumimos éxito si no hay error
+                // Mostrar mensaje de éxito
+                showNotification('✅ ¡Solicitud enviada exitosamente!', 'Nos pondremos en contacto contigo pronto.', 'success');
+                
+                // Resetear el formulario
+                contactForm.reset();
+                
+            } catch (error) {
+                console.error('Error:', error);
+                showNotification('❌ Error al enviar', 'Por favor intenta nuevamente o contáctanos por WhatsApp.', 'error');
+            } finally {
+                // Restaurar el botón
+                submitButton.disabled = false;
+                submitButton.innerHTML = originalButtonText;
+                lucide.createIcons();
+            }
         });
+        
+        // Función para mostrar notificaciones
+        function showNotification(title, message, type) {
+            // Crear elemento de notificación
+            const notification = document.createElement('div');
+            notification.className = `fixed top-24 right-6 max-w-md p-6 rounded-2xl shadow-2xl transform transition-all duration-500 z-50 ${
+                type === 'success' ? 'bg-green-50 border-2 border-green-500' : 'bg-red-50 border-2 border-red-500'
+            }`;
+            notification.innerHTML = `
+                <div class="flex items-start gap-4">
+                    <div class="${type === 'success' ? 'text-green-600' : 'text-red-600'}">
+                        <i data-lucide="${type === 'success' ? 'check-circle' : 'x-circle'}" class="w-6 h-6"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-bold text-lg ${type === 'success' ? 'text-green-900' : 'text-red-900'}">${title}</h4>
+                        <p class="text-sm ${type === 'success' ? 'text-green-700' : 'text-red-700'} mt-1">${message}</p>
+                    </div>
+                    <button onclick="this.parentElement.parentElement.remove()" class="${type === 'success' ? 'text-green-600 hover:text-green-800' : 'text-red-600 hover:text-red-800'}">
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+                </div>
+            `;
+            
+            document.body.appendChild(notification);
+            lucide.createIcons();
+            
+            // Auto-remover después de 5 segundos
+            setTimeout(() => {
+                notification.style.opacity = '0';
+                notification.style.transform = 'translateX(100%)';
+                setTimeout(() => notification.remove(), 500);
+            }, 5000);
+        }
 
         // Re-initialize icons after any DOM changes
         setTimeout(() => {
