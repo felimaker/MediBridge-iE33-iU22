@@ -79,23 +79,13 @@
                 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
-<<<<<<< Updated upstream
                     <a href="#home" class="nav-link text-sm font-semibold transition-colors text-slate-200 hover:text-blue-400">Home</a>
                     <a href="#services" class="nav-link text-sm font-semibold transition-colors text-slate-200 hover:text-blue-400">Services</a>
-                    <a href="#home" class="nav-link text-sm font-semibold transition-colors text-slate-200 hover:text-blue-400" data-en="Home" data-es="Inicio">Home</a>
-                    <a href="#services" class="nav-link text-sm font-semibold transition-colors text-slate-200 hover:text-blue-400" data-en="Services" data-es="Servicios">Services</a>
-                    <a href="#generations" class="nav-link text-sm font-semibold transition-colors text-slate-200 hover:text-blue-400" data-en="Generations" data-es="Generaciones">Generations</a>
-                    <a href="#contact" class="nav-link text-sm font-semibold transition-colors text-slate-200 hover:text-blue-400" data-en="Contact" data-es="Contacto">Contact</a>
-                    
-                    <!-- Language Switcher -->
-                    <button id="lang-switcher" class="flex items-center gap-2 px-4 py-2 rounded-full border border-white/30 hover:bg-white/10 transition-all text-white text-sm font-semibold">
-                        <i data-lucide="languages" class="w-4 h-4"></i>
-                        <span id="current-lang">EN</span>
-                    </button>
+                    <a href="#generations" class="nav-link text-sm font-semibold transition-colors text-slate-200 hover:text-blue-400">Generations</a>
+                    <a href="#contact" class="nav-link text-sm font-semibold transition-colors text-slate-200 hover:text-blue-400">Contact</a>
                     
                     <a href="https://wa.me/14698518009" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-blue-500/30 flex items-center gap-2 transform hover:scale-105">
-                        <i data-lucide="message-square" class="w-4 h-4"></i> <span data-en="Text Us" data-es="Escríbenos">Text Us</span>
-                    </a>
+                        <i data-lucide="message-square" class="w-4 h-4"></i> <span>Text Us</span>
                     </a>
                 </div>
 
@@ -108,18 +98,13 @@
 
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-t border-slate-100 shadow-2xl py-6 px-6 flex-col space-y-4 md:hidden transform origin-top transition-all">
-            <a href="#home" class="mobile-menu-link text-left text-slate-800 font-semibold text-lg p-2 rounded hover:bg-slate-50 block" data-en="Home" data-es="Inicio">Home</a>
-            <a href="#services" class="mobile-menu-link text-left text-slate-800 font-semibold text-lg p-2 rounded hover:bg-slate-50 block" data-en="Services" data-es="Servicios">Services</a>
-            <a href="#generations" class="mobile-menu-link text-left text-slate-800 font-semibold text-lg p-2 rounded hover:bg-slate-50 block" data-en="Generations" data-es="Generaciones">Generations</a>
-            <a href="#contact" class="mobile-menu-link text-left text-slate-800 font-semibold text-lg p-2 rounded hover:bg-slate-50 block" data-en="Contact" data-es="Contacto">Contact</a>
-            
-            <button id="lang-switcher-mobile" class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl border-2 border-blue-600 text-blue-600 hover:bg-blue-50 transition-all font-bold">
-                <i data-lucide="languages" class="w-5 h-5"></i>
-                <span id="current-lang-mobile">EN</span> / <span class="opacity-50">ES</span>
-            </button>
+            <a href="#home" class="mobile-menu-link text-left text-slate-800 font-semibold text-lg p-2 rounded hover:bg-slate-50 block">Home</a>
+            <a href="#services" class="mobile-menu-link text-left text-slate-800 font-semibold text-lg p-2 rounded hover:bg-slate-50 block">Services</a>
+            <a href="#generations" class="mobile-menu-link text-left text-slate-800 font-semibold text-lg p-2 rounded hover:bg-slate-50 block">Generations</a>
+            <a href="#contact" class="mobile-menu-link text-left text-slate-800 font-semibold text-lg p-2 rounded hover:bg-slate-50 block">Contact</a>
             
             <div class="pt-4 border-t border-slate-100">
-                <a href="https://wa.me/14698518009" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold text-center block shadow-lg" data-en="Chat on WhatsApp" data-es="Chat por WhatsApp">Chat on WhatsApp</a>
+                <a href="https://wa.me/14698518009" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold text-center block shadow-lg">Chat on WhatsApp</a>
             </div>
         </div>
     </nav>
@@ -128,7 +113,7 @@
     <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
         <!-- Background Image with Overlay -->
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1920" alt="Medical Equipment" class="w-full h-full object-cover">
+            <img src="img/Philips_iE33_Ultrasound.jpg" alt="Philips iE33 Ultrasound System" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-br from-slate-900/95 to-blue-900/80"></div>
         </div>
         
@@ -232,6 +217,117 @@
                 <p class="text-slate-600 text-lg leading-relaxed">
                     We don't just fix machines; we optimize your entire imaging workflow through expert remote intervention.
                 </p>
+            </div>
+            
+            <!-- Systems Gallery -->
+            <div class="grid md:grid-cols-2 gap-10 mb-20">
+                <!-- Philips iE33 -->
+                <div class="group relative" data-aos="fade-up">
+                    <!-- Animated Glow Effect -->
+                    <div class="absolute -inset-6 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-600 rounded-[3rem] blur-3xl opacity-20 group-hover:opacity-40 transition-all duration-700 animate-pulse"></div>
+                    
+                    <div class="relative bg-white rounded-[2.5rem] overflow-hidden shadow-2xl hover:shadow-blue-500/20 border border-slate-100/50 group-hover:-translate-y-3 group-hover:scale-[1.02] transition-all duration-700">
+                        <!-- Image Container with Gradient Overlay -->
+                        <div class="relative h-[520px] overflow-hidden bg-gradient-to-br from-blue-50 via-white to-cyan-50 flex items-center justify-center p-10">
+                            <div class="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent"></div>
+                            <img src="img/Philips_iE33_Ultrasound.jpg" alt="Philips iE33 Ultrasound System" class="relative h-full w-auto object-contain group-hover:scale-110 transition-transform duration-1000 ease-out filter drop-shadow-2xl">
+                            
+                            <!-- Floating Premium Badge -->
+                            <div class="absolute top-8 right-8 px-5 py-2.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full text-xs font-bold shadow-xl backdrop-blur-sm border border-blue-400/30 animate-float">
+                                <span class="flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+                                    CARDIOVASCULAR
+                                </span>
+                            </div>
+                            
+                            <!-- Corner Accent -->
+                            <div class="absolute top-0 left-0 w-24 h-24 bg-gradient-to-br from-blue-500/10 to-transparent rounded-br-full"></div>
+                        </div>
+                        
+                        <!-- Content Section -->
+                        <div class="relative p-10 bg-gradient-to-b from-white to-slate-50">
+                            <div class="flex items-center justify-between mb-5">
+                                <h3 class="text-4xl font-black text-slate-900 tracking-tight">Philips iE33</h3>
+                                <div class="flex items-center gap-2 text-slate-500 text-sm font-mono bg-slate-100 px-4 py-2 rounded-xl shadow-sm">
+                                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                                    2008-2012
+                                </div>
+                            </div>
+                            
+                            <!-- Enhanced Tech Badges -->
+                            <div class="flex gap-3 flex-wrap">
+                                <span class="group/badge px-5 py-2.5 bg-gradient-to-br from-blue-50 to-blue-100 text-blue-700 rounded-2xl text-xs font-bold border-2 border-blue-200/50 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
+                                    <i data-lucide="zap" class="w-3.5 h-3.5 inline mr-1.5 group-hover/badge:animate-pulse"></i>xMATRIX 4D
+                                </span>
+                                <span class="group/badge px-5 py-2.5 bg-gradient-to-br from-blue-50 to-blue-100 text-blue-700 rounded-2xl text-xs font-bold border-2 border-blue-200/50 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
+                                    <i data-lucide="activity" class="w-3.5 h-3.5 inline mr-1.5 group-hover/badge:animate-pulse"></i>F-Cart Advanced
+                                </span>
+                                <span class="group/badge px-5 py-2.5 bg-gradient-to-br from-blue-50 to-blue-100 text-blue-700 rounded-2xl text-xs font-bold border-2 border-blue-200/50 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
+                                    <i data-lucide="heart" class="w-3.5 h-3.5 inline mr-1.5 group-hover/badge:animate-pulse"></i>Cardiology Pro
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <!-- Shine Effect -->
+                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Philips iU22 -->
+                <div class="group relative" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Animated Glow Effect -->
+                    <div class="absolute -inset-6 bg-gradient-to-r from-green-500 via-emerald-500 to-green-600 rounded-[3rem] blur-3xl opacity-20 group-hover:opacity-40 transition-all duration-700 animate-pulse"></div>
+                    
+                    <div class="relative bg-white rounded-[2.5rem] overflow-hidden shadow-2xl hover:shadow-green-500/20 border border-slate-100/50 group-hover:-translate-y-3 group-hover:scale-[1.02] transition-all duration-700">
+                        <!-- Image Container with Gradient Overlay -->
+                        <div class="relative h-[520px] overflow-hidden bg-gradient-to-br from-green-50 via-white to-emerald-50 flex items-center justify-center p-10">
+                            <div class="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent"></div>
+                            <img src="img/Philips_iU22_Ultrasound.jpg" alt="Philips iU22 Ultrasound System" class="relative h-full w-auto object-contain group-hover:scale-110 transition-transform duration-1000 ease-out filter drop-shadow-2xl">
+                            
+                            <!-- Floating Premium Badge -->
+                            <div class="absolute top-8 right-8 px-5 py-2.5 bg-gradient-to-r from-green-600 to-emerald-700 text-white rounded-full text-xs font-bold shadow-xl backdrop-blur-sm border border-green-400/30 animate-float">
+                                <span class="flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+                                    MULTI-SPECIALTY
+                                </span>
+                            </div>
+                            
+                            <!-- Corner Accent -->
+                            <div class="absolute top-0 left-0 w-24 h-24 bg-gradient-to-br from-green-500/10 to-transparent rounded-br-full"></div>
+                        </div>
+                        
+                        <!-- Content Section -->
+                        <div class="relative p-10 bg-gradient-to-b from-white to-slate-50">
+                            <div class="flex items-center justify-between mb-5">
+                                <h3 class="text-4xl font-black text-slate-900 tracking-tight">Philips iU22</h3>
+                                <div class="flex items-center gap-2 text-slate-500 text-sm font-mono bg-slate-100 px-4 py-2 rounded-xl shadow-sm">
+                                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                                    2008-2012
+                                </div>
+                            </div>
+                            
+                            <!-- Enhanced Tech Badges -->
+                            <div class="flex gap-3 flex-wrap">
+                                <span class="group/badge px-5 py-2.5 bg-gradient-to-br from-green-50 to-green-100 text-green-700 rounded-2xl text-xs font-bold border-2 border-green-200/50 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
+                                    <i data-lucide="waves" class="w-3.5 h-3.5 inline mr-1.5 group-hover/badge:animate-pulse"></i>PureWave
+                                </span>
+                                <span class="group/badge px-5 py-2.5 bg-gradient-to-br from-green-50 to-green-100 text-green-700 rounded-2xl text-xs font-bold border-2 border-green-200/50 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
+                                    <i data-lucide="layers" class="w-3.5 h-3.5 inline mr-1.5 group-hover/badge:animate-pulse"></i>Universal Platform
+                                </span>
+                                <span class="group/badge px-5 py-2.5 bg-gradient-to-br from-green-50 to-green-100 text-green-700 rounded-2xl text-xs font-bold border-2 border-green-200/50 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
+                                    <i data-lucide="scan" class="w-3.5 h-3.5 inline mr-1.5 group-hover/badge:animate-pulse"></i>Multi-App
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <!-- Shine Effect -->
+                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -435,7 +531,7 @@
                         <p class="text-slate-300 mb-12">Don't let a broken system stall your clinic. Our engineers are ready to assist you instantly via SMS or Email.</p>
                         
                         <div class="space-y-8">
-                            <a href="sms:+14698518009" class="flex items-center gap-5 group">
+                            <!-- <a href="sms:+14698518009" class="flex items-center gap-5 group">
                                 <div class="w-12 h-12 rounded-xl bg-green-500/20 flex items-center justify-center text-green-500 group-hover:bg-green-500 group-hover:text-white transition-all">
                                     <i data-lucide="message-square" class="w-6 h-6"></i>
                                 </div>
@@ -443,7 +539,7 @@
                                     <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Instant SMS</p>
                                     <p class="font-bold text-lg">(469) 851-8009</p>
                                 </div>
-                            </a>
+                            </a> -->
                             
                             <a href="mailto:contact@medibridgeusa.com" class="flex items-center gap-5 group">
                                 <div class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-all">
